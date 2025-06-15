@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy API
-        uses: ./.github/actions/scp
+        uses: ./.github/actions/ssh-docker
         with:
           API_DEPLOY_HOST: ${{ secrets.API_DEPLOY_HOST }}
           API_DEPLOY_USERNAME: ${{ secrets.API_DEPLOY_USERNAME }}
